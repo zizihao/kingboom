@@ -2,7 +2,7 @@
 
 仿王者荣耀爆料站
 
-[官方网站](https://pvp.qq.com/coming/v2/)
+:point_right: [官方网站](https://pvp.qq.com/coming/v2/)
 
 **简介：** 静态页和交互，及自己加的一些动画，无前后台交互
 
