@@ -1,0 +1,674 @@
+// 顶部导航栏
+body {
+    background-size: 100%;
+    height: 3000px;
+    overflow-x: hidden;
+    background: #000 url(../img/bg.png) no-repeat;
+}
+
+.navtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(25, 25, 25, .8);
+
+    .logobg {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-left: 14px;
+        height: 54px;
+        width: 328px;
+
+        .logo {
+            display: block;
+        }
+
+        .mlogo {
+
+            display: block;
+            width: 120px;
+            height: 54px;
+            background: url(../img/main-logo.png) no-repeat -85px 3px;
+        }
+    }
+
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 806px;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            float: left;
+            padding: 16px 13px;
+            height: 80px;
+            width: 80px;
+            color: #464441;
+            cursor: pointer;
+
+            p {
+                display: block;
+                font-size: 16px;
+                color: #6e6a63;
+            }
+
+            &:last-child {
+                width: 100px;
+            }
+
+            &:first-child {
+                p {
+                    color: #c39b5e;
+                }
+
+                border-bottom: 2px solid #c39b5e;
+            }
+
+            &:hover {
+                p {
+                    color: #c39b5e;
+                }
+
+                border-bottom: 2px solid #c39b5e;
+            }
+        }
+    }
+
+    .login {
+        width: 166px;
+        margin-right: 160px;
+        cursor: pointer;
+
+        span {
+            float: left;
+            display: block;
+            width: 44px;
+            height: 44px;
+            margin-right: 7px;
+            border: 1px solid #f3c258;
+            border-radius: 50%;
+            background: url(../img/下載.png);
+        }
+
+        h4 {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        p {
+            color: #7a7c85;
+        }
+    }
+}
+
+// 轮播图
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 830px;
+
+    .banner-threed {
+        width: 4070px;
+        height: 600px;
+
+        .swiper-slide {
+            position: relative;
+            filter: grayscale(100%);
+
+            img {
+                width: 1000px;
+                height: 600px;
+            }
+
+            .banner-slide-box {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 1000px;
+                height: 200px;
+                text-align: center;
+                background-color: rgba(0, 0, 0, .85);
+
+                h3 {
+                    font-size: 35px;
+                    font-weight: normal;
+                    margin-top: 30px;
+                    margin-bottom: 12px;
+                    color: #fff;
+
+                    span {
+                        color: #c39b5e;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+                    color: #fff;
+
+                    &:last-child {
+                        margin-top: 20px;
+                        color: #8f897f;
+                    }
+                }
+            }
+
+
+        }
+
+        .swiper-pagination {
+            bottom: -48px;
+
+            .my-bullet-active {
+                background-color: #c39b5e !important;
+            }
+        }
+
+    }
+}
+
+.pifu {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    height: 1180px;
+
+    .pifu-top {
+        width: 100%;
+        height: 165px;
+        margin-top: 21px;
+
+        .pifu-top-box {
+            position: relative;
+            width: 172px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 6px;
+            border-bottom: 1px solid #c39b5e;
+            text-align: center;
+
+            i {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background: url(../img/icon-bg.png) -256px -14px;
+
+            }
+
+            h4 {
+                font-size: 30px;
+                color: #b98c52;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 82px;
+                width: 4px;
+                height: 4px;
+                background-color: #000;
+                transform: rotate(45deg);
+                border: 1px solid #b98c52;
+            }
+        }
+    }
+
+    .pifu-main {
+        position: absolute;
+        left: 1400px;
+        width: 1400px;
+        height: 700px;
+        background: url(../img/m1.jpg);
+
+        .pifu-main-left {
+            position: absolute;
+            left: -1900px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 490px;
+            height: 100%;
+            color: #c39b5e;
+            background-color: rgba(0, 0, 0, .8);
+
+            .pifu-main-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 450px;
+                height: 665px;
+                padding-left: 20px;
+                padding-bottom: 35px;
+                border-left: 1px solid #1e201e;
+                border-right: 1px solid #1e201e;
+
+                h3 {
+                    display: block;
+                    width: 106px;
+                    height: 110px;
+                    line-height: 55px;
+                    font-size: 50px;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    height: 27px;
+                    line-height: 27px;
+                    width: 101px;
+                    border: 1px solid #c39b5e;
+                    border-radius: 10px;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #fff;
+
+                    em {
+                        display: block;
+                        float: left;
+                        height: 26px;
+                        width: 26px;
+                        margin-right: 10px;
+                        background: url(../img/icon-bg.png) -153px -17px;
+                    }
+                }
+
+                .gifbox {
+                    width: 402px;
+                    height: 227px;
+                    border: 1px solid #5f4f39;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .chakan {
+                    width: 402px;
+                    text-align: center;
+                    height: 76px;
+                    line-height: 76px;
+                    border: 1px solid #c39b5e;
+                    background-color: #000;
+                    margin-top: 80px;
+                    overflow: hidden;
+
+                    p {
+                        color: #c39b5e;
+                        font-size: 19px;
+                        cursor: pointer;
+                    }
+
+                    &:hover p {
+                        transition: all .3s;
+                        transform: translateY(-100%);
+                    }
+                }
+            }
+        }
+    }
+
+    .pifu-buttom {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        margin-bottom: 90px;
+        width: 100%;
+        height: 174px;
+
+
+        .pifu-buttom-main {
+            position: relative;
+            width: 340px;
+            height: 174px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            span {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                background: linear-gradient(transparent, rgba(0, 0, 0, .9));
+            }
+
+            .pifu-buttom-box {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .5);
+                border: 1px solid #af995d;
+                opacity: 0;
+
+                h4 {
+                    font-weight: normal;
+                    color: #af995d;
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #94918a;
+
+                    &:last-child {
+                        color: #7b7872;
+                    }
+                }
+            }
+
+            &:hover {
+                overflow: hidden;
+            }
+
+            &:hover img {
+                transition: all .5s;
+                transform: scale(1.1);
+            }
+
+            &:hover .pifu-buttom-box {
+                transition: all .5s;
+                opacity: 1;
+            }
+
+            &:hover span {
+                display: none;
+            }
+        }
+    }
+
+    .qita {
+
+        width: 100%;
+        height: 600px;
+
+        .qita-left {
+            overflow: hidden;
+            margin-right: 20px;
+            float: left;
+            width: 700px;
+            height: 100%;
+        }
+
+        .qita-right {
+            float: left;
+            width: 680px;
+            height: 290px;
+            overflow: hidden;
+
+            &:last-child {
+                margin-top: 20px;
+            }
+        }
+
+        &>div:hover img {
+            transition: all .5s;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.yinxio {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    height: 1180px;
+
+
+    .pifu-top {
+        width: 100%;
+        height: 165px;
+        margin-top: 21px;
+
+        .pifu-top-box {
+            position: relative;
+            width: 172px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 6px;
+            border-bottom: 1px solid #c39b5e;
+            text-align: center;
+
+            i {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background: url(../img/icon-bg.png) -100px -14px;
+
+            }
+
+            h4 {
+                font-size: 30px;
+                color: #b98c52;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 82px;
+                width: 4px;
+                height: 4px;
+                background-color: #000;
+                transform: rotate(45deg);
+                border: 1px solid #b98c52;
+            }
+        }
+    }
+
+    .pifu-main {
+        position: absolute;
+        left: 1400px;
+        width: 1400px;
+        height: 700px;
+        background: url(../img/m2.jpg);
+
+        .pifu-main-left {
+            position: absolute;
+            left: -1900px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 490px;
+            height: 100%;
+            color: #c39b5e;
+            background-color: rgba(0, 0, 0, .8);
+
+            .pifu-main-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 450px;
+                height: 665px;
+                padding-left: 20px;
+                padding-bottom: 35px;
+                border-left: 1px solid #1e201e;
+                border-right: 1px solid #1e201e;
+
+                h3 {
+                    display: block;
+                    width: 106px;
+                    height: 110px;
+                    line-height: 55px;
+                    font-size: 50px;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    height: 27px;
+                    line-height: 27px;
+                    width: 101px;
+                    border: 1px solid #c39b5e;
+                    border-radius: 10px;
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #fff;
+
+                    em {
+                        display: block;
+                        float: left;
+                        height: 26px;
+                        width: 26px;
+                        margin-right: 10px;
+                        background: url(../img/icon-bg.png) -153px -17px;
+                    }
+                }
+
+                .gifbox {
+                    width: 402px;
+                    height: 227px;
+                    border: 1px solid #5f4f39;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .chakan {
+                    width: 402px;
+                    text-align: center;
+                    height: 76px;
+                    line-height: 76px;
+                    border: 1px solid #c39b5e;
+                    background-color: #000;
+                    margin-top: 80px;
+                    overflow: hidden;
+
+                    p {
+                        color: #c39b5e;
+                        font-size: 19px;
+                        cursor: pointer;
+                    }
+
+                    &:hover p {
+                        transition: all .3s;
+                        transform: translateY(-100%);
+                    }
+                }
+            }
+        }
+    }
+
+    .pifu-buttom {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        margin-bottom: 90px;
+        width: 100%;
+        height: 174px;
+
+
+        .pifu-buttom-main {
+            position: relative;
+            width: 340px;
+            height: 174px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            span {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                background: linear-gradient(transparent, rgba(0, 0, 0, .9));
+            }
+
+            .pifu-buttom-box {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .5);
+                border: 1px solid #af995d;
+                opacity: 0;
+
+                h4 {
+                    font-weight: normal;
+                    color: #af995d;
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #94918a;
+
+                    &:last-child {
+                        color: #7b7872;
+                    }
+                }
+            }
+
+            &:hover {
+                overflow: hidden;
+            }
+
+            &:hover img {
+                transition: all .5s;
+                transform: scale(1.1);
+            }
+
+            &:hover .pifu-buttom-box {
+                transition: all .5s;
+                opacity: 1;
+            }
+
+            &:hover span {
+                display: none;
+            }
+        }
+    }
+
+
+}
